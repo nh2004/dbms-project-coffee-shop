@@ -1,0 +1,35 @@
+/* Ensure no extra space */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure full height */
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Apply background to the main container */
+.app-container {
+    background-image: url('./assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    flex-direction: column;
+}
+.app-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding: 20px 0;  /* Adds spacing inside the heading */
+    margin: 30px 0;   /* Adds spacing above and below */
+    background: rgba(0, 0, 0, 0.6); /* Optional: Semi-transparent background */
+    width: 100%;
+}
